@@ -8,10 +8,6 @@
       <change afterPath="$PROJECT_DIR$/server/src/prisma/index.ts" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/server/src/prisma/prisma.module.ts" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/server/src/prisma/prisma.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/app/(auth)/sign-in/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/(auth)/sign-in/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/auth/button/task/sign-in-button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/auth/sign-in-button.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
