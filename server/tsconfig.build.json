@@ -1,6 +1,0 @@
-{
-  "extends": "./tsconfig.json",
-  "exclude": [
-    "qchatmail_server/node_modules",
-    "test", "dist", "**/*spec.ts"]
-}

@@ -5,96 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f78c6aac-27a2-46a8-b8ce-27810dce6774" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/app/(auth)/sign-in/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/(test)/layout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/app/(test)/test/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/axios/axios.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/auth/button/task/sign-in-button.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/auth/core/singin.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/env/server.env.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/firebase/config/firebase-config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/firebase/env/firebase.credential.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/firebase/loader/loader.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/firebase/protector/firebase-protect-layout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/firebase/session/use-session.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/firebase/store/use-auth-store.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/react-query/react-query-provider.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/react-query/react-query.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/react-query/setting.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.eslintrc.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/app/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/app/fonts/GeistMonoVF.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/app/fonts/GeistVF.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/app/globals.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/app/layout.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/app/page.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/components.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/components/ui/accordion.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/components/ui/alert-dialog.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/components/ui/alert.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/components/ui/aspect-ratio.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/components/ui/avatar.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/components/ui/badge.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/components/ui/breadcrumb.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/components/ui/button.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/components/ui/calendar.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/components/ui/card.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/components/ui/carousel.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/components/ui/chart.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/components/ui/checkbox.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/components/ui/collapsible.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/components/ui/command.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/components/ui/context-menu.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/components/ui/dialog.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/components/ui/drawer.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/components/ui/dropdown-menu.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/components/ui/form.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/components/ui/hover-card.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/components/ui/input-otp.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/components/ui/input.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/components/ui/label.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/components/ui/menubar.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/components/ui/navigation-menu.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/components/ui/pagination.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/components/ui/popover.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/components/ui/progress.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/components/ui/radio-group.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/components/ui/resizable.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/components/ui/scroll-area.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/components/ui/select.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/components/ui/separator.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/components/ui/sheet.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/components/ui/sidebar.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/components/ui/skeleton.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/components/ui/slider.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/components/ui/sonner.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/components/ui/switch.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/components/ui/table.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/components/ui/tabs.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/components/ui/textarea.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/components/ui/toast.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/components/ui/toaster.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/components/ui/toggle-group.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/components/ui/toggle.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/components/ui/tooltip.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/hooks/use-mobile.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/hooks/use-toast.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/lib/utils.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/next.config.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/postcss.config.mjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/file.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/globe.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/next.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/vercel.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/window.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/tailwind.config.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/server/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/server/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/prisma/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/prisma/prisma.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/prisma/prisma.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/(auth)/sign-in/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/(auth)/sign-in/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/auth/button/task/sign-in-button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/auth/sign-in-button.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,10 +19,13 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FormatOnSaveOptions">
-    <option name="myRunOnSave" value="true" />
+    <option name="myAllFileTypesSelected" value="true" />
+    <option name="mySelectedFileTypes">
+      <set />
+    </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/server" />
   </component>
   <component name="OptimizeOnSaveOptions">
     <option name="myRunOnSave" value="true" />
@@ -125,8 +45,8 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Github/QSmartMailAi/client/src/components",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Github/QSmartMailAi/server/src/prisma",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -143,18 +63,18 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Github\QSmartMailAi\server\src\prisma" />
+      <recent name="C:\Github\QSmartMailAi\server\src" />
       <recent name="C:\Github\QSmartMailAi\client\src\components" />
       <recent name="C:\Github\QSmartMailAi\client\src\app" />
       <recent name="C:\Github\QSmartMailAi\client\src\react-query" />
-      <recent name="C:\Github\QSmartMailAi\client\src\firebase\store" />
-      <recent name="C:\Github\QSmartMailAi\client\src\axios" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Github\QSmartMailAi\client\src\components\auth" />
       <recent name="C:\Github\QSmartMailAi\client\src\app\(auth)" />
       <recent name="C:\Github\QSmartMailAi\client\src\react-query" />
       <recent name="C:\Github\QSmartMailAi\client\src\app\(test)\test" />
       <recent name="C:\Github\QSmartMailAi\client\src\firebase" />
-      <recent name="C:\Github\QSmartMailAi\server" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -186,7 +106,8 @@
       <workItem from="1732085182106" duration="14000" />
       <workItem from="1732115658137" duration="3131000" />
       <workItem from="1732353599702" duration="11245000" />
-      <workItem from="1732447408523" duration="7816000" />
+      <workItem from="1732447408523" duration="8139000" />
+      <workItem from="1732458215893" duration="5992000" />
     </task>
     <servers />
   </component>
