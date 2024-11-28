@@ -26,13 +26,13 @@ function createAxiosInstance(baseUrlIndex: number): AxiosInstance {
             : (data.message ?? "An error occurred");
         return Promise.reject(new Error(errorMessage));
       } else if (error.response) {
-        console.error(
+        console.log(
           `Response error: ${error.response.status} ${JSON.stringify(error.response.data)}`,
         );
       } else if (error.request) {
-        console.error(`Request error: ${error.request}`);
+        console.log(`Request error: ${error.request}`);
       } else {
-        console.error(`Error: ${error.message}`);
+        console.log(`Error: ${error.message}`);
       }
       return Promise.reject(error);
     },

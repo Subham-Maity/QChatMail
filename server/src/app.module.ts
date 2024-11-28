@@ -7,21 +7,10 @@ import { ConfigModule } from '@nestjs/config';
 import { validateConfig } from './validate/env.validation';
 import { LoggerMiddleware } from './logger';
 
-// // For request only
-// LoggerMiddleware.configure({
-//   logRequest: true,
-// });
-
-// // For request and response
-// LoggerMiddleware.configure({
-//   logRequest: true,
-//   logResponse: true
-// });
-
 // For everything
 LoggerMiddleware.configure({
   logRequest: true,
-  logHeaders: true,
+  logHeaders: false,
   logBody: true,
   logResponse: true,
   logLatency: true,

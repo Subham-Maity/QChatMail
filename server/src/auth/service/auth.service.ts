@@ -1,6 +1,14 @@
-import { Inject, Injectable, Logger } from '@nestjs/common';
+import {
+  BadRequestException,
+  Inject,
+  Injectable,
+  Logger,
+  UnauthorizedException,
+} from '@nestjs/common';
 import * as admin from 'firebase-admin';
 import { AuthRepository } from '../repository';
+import { CreateUserDto } from '../dto';
+import { AuthType } from '@prisma/client';
 
 @Injectable()
 export class AuthService {
@@ -14,12 +22,23 @@ export class AuthService {
   async login(idToken: string) {
     const decodedToken = await this.firebaseAdmin.auth().verifyIdToken(idToken);
 
+    if (!decodedToken.email_verified) {
+      // Throw a specific error for email not verified
+      throw new BadRequestException(
+        'Email not verified. Please verify your email first.',
+      );
+    }
+
     const userInfo = await this.authRepository.findOneAndUpdate(
       decodedToken.email,
       {
         email: decodedToken.email,
-        name: decodedToken.name,
+        name: decodedToken.name || decodedToken.displayName,
         img: decodedToken.picture,
+        authType:
+          decodedToken.firebase.sign_in_provider === 'password'
+            ? AuthType.EMAIL
+            : AuthType.GOOGLE,
       },
     );
 
@@ -40,5 +59,37 @@ export class AuthService {
       .auth()
       .verifySessionCookie(sessionCookie);
     await this.firebaseAdmin.auth().revokeRefreshTokens(decodedClaims.sub);
+  }
+
+  async registerWithEmail(userData: CreateUserDto) {
+    try {
+      // Validate input
+      if (!userData.email || !userData.password) {
+        throw new UnauthorizedException('Email and password are required');
+      }
+
+      // Check if user already exists in database
+      const existingUser = await this.authRepository.findUserByEmail(
+        userData.email,
+      );
+      if (existingUser) {
+        throw new UnauthorizedException('User with this email already exists');
+      }
+
+      // Create user in database
+      const userInfo = await this.authRepository.findOneAndUpdate(
+        userData.email,
+        {
+          email: userData.email,
+          name: userData.name,
+          authType: AuthType.EMAIL,
+        },
+      );
+
+      return { userInfo };
+    } catch (error) {
+      this.logger.error('Registration error', error);
+      throw error;
+    }
   }
 }

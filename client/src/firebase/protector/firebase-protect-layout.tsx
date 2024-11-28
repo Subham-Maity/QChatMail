@@ -1,8 +1,6 @@
 "use client";
-import React from "react";
-
+import React, { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
-
 import { useSession } from "@/firebase/session/use-session";
 import Loader from "@/firebase/loader/loader";
 
@@ -15,14 +13,20 @@ export function FirebaseAuthProtector({
 }: FirebaseAuthProtectorProps) {
   const { status } = useSession();
   const router = useRouter();
+  const [isRedirecting, setIsRedirecting] = useState(false);
 
-  if (status === "loading") {
+  useEffect(() => {
+    if (status === "unauthenticated" && !isRedirecting) {
+      setIsRedirecting(true);
+      router.push("/login");
+    }
+  }, [status, router, isRedirecting]);
+
+  if (status === "loading" || isRedirecting) {
     return <Loader />;
   }
 
   if (status === "unauthenticated") {
-    console.log(status + "status");
-    router.push("/sign-in");
     return null;
   }
 

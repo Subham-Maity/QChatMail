@@ -12,6 +12,12 @@ model User {
   email     String   @unique
   name      String?
   img       String?
+  authType  AuthType @default(GOOGLE)
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
+}
+
+enum AuthType {
+  GOOGLE
+  EMAIL
 }
