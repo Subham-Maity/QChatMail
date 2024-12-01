@@ -6,6 +6,7 @@ import { PrismaModule } from './prisma';
 import { ConfigModule } from '@nestjs/config';
 import { validateConfig } from './validate/env.validation';
 import { LoggerMiddleware } from './logger';
+import { AurinkoModule } from './aurinko/aurinko.module';
 
 // For everything
 LoggerMiddleware.configure({
@@ -28,6 +29,7 @@ LoggerMiddleware.configure({
     }),
     AuthModule,
     PrismaModule,
+    AurinkoModule,
   ],
   controllers: [AppController],
   providers: [AppService],

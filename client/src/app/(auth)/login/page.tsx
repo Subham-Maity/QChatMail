@@ -103,10 +103,9 @@ const Login: React.FC = () => {
       });
 
       router.push("/");
-      // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    } catch (error) {
+    } catch (error: any) {
       toast.error("Sign In Error", {
-        description: "An error occurred. Please try again.",
+        description: "An error occurred. Please try again." + error.message,
       });
     }
   };
