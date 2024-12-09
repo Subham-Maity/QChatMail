@@ -1,8 +1,11 @@
 import { Module } from '@nestjs/common';
-import { AurinkoService } from './service/aurinko.service';
-import { AurinkoController } from './controller/aurinko.controller';
+import { AurinkoController } from './controller';
+import { AurinkoService } from './service';
+import { HttpModule } from '@nestjs/axios';
+import { ConfigModule } from '@nestjs/config';
 
 @Module({
+  imports: [HttpModule, ConfigModule],
   controllers: [AurinkoController],
   providers: [AurinkoService],
 })
